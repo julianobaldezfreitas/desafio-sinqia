@@ -50,7 +50,7 @@ public class Aplicacao {
 		try {
 			caminhoMonitorado.register(monitorDiretorio, ENTRY_CREATE);
 		} catch (NoSuchFileException e) {
-			System.err.println("Erro: Diret�rio de entrada de dados n�o existe: " + caminhoLotesArquivos);
+			System.err.println("Erro: Diretório de entrada de dados não existe: " + caminhoLotesArquivos);
 		}
 
 		WatchKey itemMonitorado;
@@ -66,7 +66,7 @@ public class Aplicacao {
 						processaArquivo.processa(arquivoEncontrado);
 					} catch (IOException | MonitorException e) {
 						e.printStackTrace();
-						System.out.println("-- Arquivo n�o processado: " + arquivoEncontrado);
+						System.out.println("-- Arquivo não processado: " + arquivoEncontrado);
 						continue;
 					}
 				}
