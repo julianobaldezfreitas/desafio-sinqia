@@ -7,7 +7,7 @@
 Algumas notas sobre a interpretação do desafio.
 
 
-- A aplicação desenvolvida monitora o user.home do sistema operacional. Por exemplo, no Windows o diretório pode ser **c:\Usuarios\<nome do usuario**
+- A aplicação desenvolvida monitora o user.home do sistema operacional. Por exemplo, no Windows o diretório pode ser **c:\Usuarios\<nome do usuario>**
 
 ```
 Diretório padrão de entrada de dados: 
@@ -35,7 +35,7 @@ java.nio.file.FileSystemException: <caminho do arquivo>: O arquivo já está sen
 
 ## Bugs conhecidos nos Unit Tests
 
-- **[CORRIGIDO]** Na classe **Arquivo.java** os arquivos são aberto para leitura com padrão de ENCODE UTF-8. Nos testes realizados na aplicação não geram nenhum tipo de erro. Ao implementar os testes unitários automatizados foi percebido que com esta condificação os testes estavam levantando a seguinte exception:
+- **[CORRIGIDO]** Na classe **Arquivo.java** os arquivos são abertos para leitura com padrão de ENCODE UTF-8. Nos testes realizados na aplicação não geram nenhum tipo de erro. Ao implementar os testes unitários automatizados foi percebido que com esta condificação os testes estavam levantando a seguinte exception:
 
 ```
 java.nio.charset.MalformedInputException: Input length = 1
