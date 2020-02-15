@@ -16,8 +16,8 @@ import com.sinqia.desafio.gerenciador.conteudo.Relatorio;
 
 /**
  * Classe que representa o arquivo a ser analisado
- * dentro do lote. Possui operações para percorrer
- * um arquivo e gerar arquivos de saída.
+ * dentro do lote. Possui operaï¿½ï¿½es para percorrer
+ * um arquivo e gerar arquivos de saï¿½da.
  * @author juliano
  */
 public class Arquivo {
@@ -32,10 +32,10 @@ public class Arquivo {
 	 * Percorre arquivo e extrai dados das linhas.
 	 * 
 	 * @param caminhoDoArquivo caminho do arquivo no sistema operacional.
-	 * @param gerenciador instância do gerenciador de dados.
-	 * @return instância do gerenciador de dados preenchidas com os dados do arquivo.
+	 * @param gerenciador instï¿½ncia do gerenciador de dados.
+	 * @return instï¿½ncia do gerenciador de dados preenchidas com os dados do arquivo.
 	 * @throws IOException erros de escrita e leitura nos arquivos.
-	 * @throws MonitorException erros específicos da aplicação.
+	 * @throws MonitorException erros especï¿½ficos da aplicaï¿½ï¿½o.
 	 */
 	public GerenciadorConteudo percorreArquivoEntrada(Path caminhoDoArquivo, GerenciadorConteudo gerenciador)
 			throws IOException, MonitorException {

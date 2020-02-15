@@ -9,12 +9,12 @@ import com.sinqia.desafio.exception.CodigoLinhaException;
 
 /**
  * Classe que instancia as entidades Venda, Vendedor e Cliente
- * de acordo com o código da linha dos arquivos.
+ * de acordo com o cï¿½digo da linha dos arquivos.
  * @author juliano
  */
 public class EntityFactory {
 
-	private static final String SEPARADOR_DADOS_LINHA = "ç";
+	private static final String SEPARADOR_DADOS_LINHA = "Ã§";
 	private static final String SEPARADOR_LISTA_ITEM_VENDA = "-";
 	private static final String SEPARADOR_DADOS_ITEM_VENDA = ",";
 
@@ -24,12 +24,12 @@ public class EntityFactory {
 
 	/**
 	 * Cria objetos Entity concretos (Venda, Cliente e Vendedor).
-	 * De acordo com o código da linha no arquivo
-	 * cria a instâcia das classes que as representam.
+	 * De acordo com o cï¿½digo da linha no arquivo
+	 * cria a instï¿½cia das classes que as representam.
 	 * 
 	 * @param linhaDoArquivo linha do arquivo percorrido.
-	 * @return instância das classes concretas de Entity.
-	 * @throws CodigoLinhaException código de linha inválido.
+	 * @return instï¿½ncia das classes concretas de Entity.
+	 * @throws CodigoLinhaException cï¿½digo de linha invï¿½lido.
 	 */
 	public static Entity getEntity(String linhaDoArquivo) throws CodigoLinhaException {
 		if (getCodigoTipoDado(linhaDoArquivo).equals(CODIGO_VENDEDOR)) {
