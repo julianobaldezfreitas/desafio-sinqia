@@ -7,9 +7,9 @@ import com.sinqia.desafio.exception.MonitorException;
 import com.sinqia.desafio.gerenciador.conteudo.GerenciadorConteudo;
 
 /**
- * Classe responsável pela orquestração do processamento
- * dos dados. Chama as operações de arquivo, de gerenciamento
- * de conteúdo e de impressão do relatório.
+ * Classe responsÃ¡vel pela orquestraÃ§Ã£o do processamento
+ * dos dados. Chama as operaï¿½ï¿½es de arquivo, de gerenciamento
+ * de conteÃºdo e de impressï¿½o do relatÃ³rio.
  * @author juliano
  */
 public class ProcessaArquivo {
@@ -35,7 +35,7 @@ public class ProcessaArquivo {
 		return this.gerenciadorConteudo;
 	}
 	
-	//FIXME injeção para teste
+	//FIXME injeÃ§Ã£o para teste
 	public void setArquivo(Arquivo novaInstancia) {
 		this.arquivo = novaInstancia;
 	}

@@ -1,17 +1,17 @@
 package com.sinqia.desafio.gerenciador.conteudo;
 
 /**
- * Classe responsável por formatar os relatórios
- * da análise de dados.
+ * Classe responsÃ¡vel por formatar os relatÃ³rios
+ * da anÃ¡lise de dados.
  * @author juliano
  */
 public class Relatorio {
 
 	/**
-	 * Gera relatório com os dados solicitados.
+	 * Gera relatÃ³rio com os dados solicitados.
 	 * 
-	 * @param instância de gerenciadorConteudo.
-	 * @return relatório formatado modo texto.
+	 * @param instÃ¢ncia de gerenciadorConteudo.
+	 * @return relatÃ³rio formatado modo texto.
 	 */
 	public String geraRelatorio(GerenciadorConteudo gerenciadorConteudo) {
 		StringBuffer texto = new StringBuffer();
@@ -28,7 +28,7 @@ public class Relatorio {
 				gerenciadorConteudo.getIdVendaMaisCara()));
 		texto.append("\n");
 		texto.append(String.format(
-				"O pior vendedor é: %s ",
+				"O pior vendedor Ã©: %s ",
 				gerenciadorConteudo.getPiorVendedor()));
 
 		return texto.toString();

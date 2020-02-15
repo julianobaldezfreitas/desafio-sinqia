@@ -2,8 +2,8 @@ package com.sinqia.desafio.exception;
 
 /**
  * Classe de exception para tratamento de erro
- * quando a extensão do arquivo de entrada não 
- * é válida.
+ * quando a extensÃ£o do arquivo de entrada nÃ£o 
+ * Ã© vÃ¡lida.
  * @author juliano
  */
 public class ExtensaoException extends MonitorException{
@@ -11,7 +11,7 @@ public class ExtensaoException extends MonitorException{
 	private static final long serialVersionUID = 1L;
 
 	public ExtensaoException() {
-		super("Extensão de arquivo de entrada não suportado.");
+		super("Extensï¿½o de arquivo de entrada nï¿½o suportado.");
 	}
 	
 }

@@ -17,7 +17,7 @@ import com.sinqia.desafio.exception.MonitorException;;
 
 
 /**
- * Classe principal responsável por executar a aplicação.
+ * Classe principal responsÃ¡vel por executar a apliÃ§Ã£o.
  * Monitora um diretorio e dispara o processamento dos mesmos
  * quando criados novos arquivos.
  * @author juliano
@@ -31,9 +31,9 @@ public class Aplicacao {
 	}
 
 	/**
-	 * Monitara um diretório do sistema operacional e observa
-	 * eventos de criação de arquivos. Para cada arquivo gerado neste 
-	 * diretório faz o processamento do mesmo.
+	 * Monitara um diretÃ³rio do sistema operacional e observa
+	 * eventos de criaÃ§Ã£o de arquivos. Para cada arquivo gerado neste 
+	 * diretÃ³rio faz o processamento do mesmo.
 	 * @throws IOException erros na leitura e escrita dos arquivos.
 	 * @throws InterruptedException
 	 */
@@ -50,7 +50,7 @@ public class Aplicacao {
 		try {
 			caminhoMonitorado.register(monitorDiretorio, ENTRY_CREATE);
 		} catch (NoSuchFileException e) {
-			System.err.println("Erro: Diretório de entrada de dados não existe: " + caminhoLotesArquivos);
+			System.err.println("Erro: Diretï¿½rio de entrada de dados nï¿½o existe: " + caminhoLotesArquivos);
 		}
 
 		WatchKey itemMonitorado;
@@ -66,7 +66,7 @@ public class Aplicacao {
 						processaArquivo.processa(arquivoEncontrado);
 					} catch (IOException | MonitorException e) {
 						e.printStackTrace();
-						System.out.println("-- Arquivo não processado: " + arquivoEncontrado);
+						System.out.println("-- Arquivo nï¿½o processado: " + arquivoEncontrado);
 						continue;
 					}
 				}

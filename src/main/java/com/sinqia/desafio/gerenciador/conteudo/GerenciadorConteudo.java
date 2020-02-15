@@ -15,7 +15,7 @@ import com.sinqia.desafio.vo.VendaPorVendedor;
 import com.sinqia.desafio.vo.Vendedor;
 
 /**
- * Classe respons·vel por gerenciar e acessar
+ * Classe respons√°vel por gerenciar e acessar
  * os dados obtidos na leitura dos arquivos.
  * @author juliano
  */
@@ -29,16 +29,16 @@ public class GerenciadorConteudo {
 	/**
 	 * Para cada linha do arquivo gera a instancia de um
 	 * objeto (Entity). De acordo com o tipo da Entity (Venda,
-	 * Vendedor, Cliente) adiciona em uma lista especÌfica por
+	 * Vendedor, Cliente) adiciona em uma lista espec√≠fica por
 	 * tipo.
 	 * 
-	 * A medida que a leitura dos dados È realizada os mesmos j·
-	 * est„o sendo filtrados. Para geraÁ„o dos relatÛrios solicitados
-	 * os dados s„o capturados sem impacto de performance.
+	 * A medida que a leitura dos dados √© realizada os mesmos j√°
+	 * est√£o sendo filtrados. Para gera√ß√£o dos relat√≥rios solicitados
+	 * os dados s√£o capturados sem impacto de performance.
 	 * 
-	 * Evita percorrer muitas vezes listas em memÛria no Java.
+	 * Evita percorrer muitas vezes listas em mem√≥ria no Java.
 	 * @param linhaDoArquivo linha do arquivo percorrido.
-	 * @throws MonitorException linha do arquivo n„o tem o codigo esperado da Entity (Venda, Cliente, Vendedor) 
+	 * @throws MonitorException linha do arquivo n√£o tem o codigo esperado da Entity (Venda, Cliente, Vendedor) 
 	 */
 	public void geraConteudo(String linhaDoArquivo) throws MonitorException {
 
@@ -85,7 +85,7 @@ public class GerenciadorConteudo {
 	}
 	
 	/*
-	 * GERA DADOS PARA O RELAT”RIO
+	 * GERA DADOS PARA O RELAT√ìRIO
 	 */
 	public int getQtdClientes() {
 		if(!getClientes().isEmpty()) {
@@ -116,7 +116,7 @@ public class GerenciadorConteudo {
 			Collections.sort(vendaPorVendedorLista);
 			return vendaPorVendedorLista.get(0).getNome();
 		} else {
-			return "N„o foram encontrados dados de Venda.";
+			return "N√£o foram encontrados dados de Venda.";
 		}
 	}
 

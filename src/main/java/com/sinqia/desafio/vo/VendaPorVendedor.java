@@ -3,7 +3,7 @@ package com.sinqia.desafio.vo;
 import java.math.BigDecimal;
 
 /**
- * Classe criada para c·lculo dos totais de venda por vendedor. Objetivo de
+ * Classe criada para c√°lculo dos totais de venda por vendedor. Objetivo de
  * melhorar a performance.
  * 
  * @author juliano

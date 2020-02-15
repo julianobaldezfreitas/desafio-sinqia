@@ -19,11 +19,11 @@ public class EntityFactoryTest {
 
 	@Before
 	public void setUp() {
-		linhasArquivo.add("001ç1234567891234çPedroç50000");
-		linhasArquivo.add("002ç2345675434544345çJose da SilvaçRural");
-		linhasArquivo.add("003ç21ç[1-34-1000,2-33-1.50,3-40-0.10]çVanessa");
-		linhasArquivo.add("005ç21çVanessa");
-		linhasArquivo.add("003ç22ç[1-34-1000,2-33-1.50,3-40-0.10]çVanessa");
+		linhasArquivo.add("001Ã§1234567891234Ã§PedroÃ§50000");
+		linhasArquivo.add("002Ã§2345675434544345Ã§Jose da SilvaÃ§Rural");
+		linhasArquivo.add("003Ã§21Ã§[1-34-1000,2-33-1.50,3-40-0.10]Ã§Vanessa");
+		linhasArquivo.add("005Ã§21Ã§Vanessa");
+		linhasArquivo.add("003Ã§22Ã§[1-34-1000,2-33-1.50,3-40-0.10]Ã§Vanessa");
 	}
 
 	@Test
@@ -57,7 +57,7 @@ public class EntityFactoryTest {
 		Entity entityCriada = EntityFactory.getEntity(linhasArquivo.get(2));
 		assertEquals(entityCriada.getClass(), Venda.class);
 	
-		//003ç21ç[1-34-1000,2-33-1.50,3-40-0.10]çVanessa
+		//003Ã§21Ã§[1-34-1000,2-33-1.50,3-40-0.10]Ã§Vanessa
 		Venda venda = (Venda) entityCriada;
 		assertEquals(venda.getId(), Long.valueOf(21)); 
 		assertEquals(venda.getNomeVendedor(), "Vanessa"); 

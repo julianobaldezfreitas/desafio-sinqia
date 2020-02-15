@@ -34,7 +34,7 @@ public class ProcessaArquivoTest {
 		this.processaArquivo = new ProcessaArquivo();
 		
 		// Mock parcial do objeto Arquivo 
-		// nao gera arquivo de saída
+		// nao gera arquivo de saÃ­da
 		arquivo =  Mockito.spy(new Arquivo());
 		Mockito.doNothing().when(arquivo).criaArquivoSaida(Mockito.anyObject());
 		processaArquivo.setArquivo(arquivo);

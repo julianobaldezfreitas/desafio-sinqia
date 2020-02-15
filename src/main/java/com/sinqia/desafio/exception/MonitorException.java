@@ -1,8 +1,8 @@
 package com.sinqia.desafio.exception;
 
 /**
- * Classe genérica de exceptions para tratamento de erros
- * na aplicação.
+ * Classe genÃ©rica de exceptions para tratamento de erros
+ * na apliÃ§Ã£o.
  * @author juliano
  */
 public class MonitorException extends Exception {

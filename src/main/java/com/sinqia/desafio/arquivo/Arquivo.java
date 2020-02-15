@@ -32,10 +32,10 @@ public class Arquivo {
 	 * Percorre arquivo e extrai dados das linhas.
 	 * 
 	 * @param caminhoDoArquivo caminho do arquivo no sistema operacional.
-	 * @param gerenciador inst�ncia do gerenciador de dados.
-	 * @return inst�ncia do gerenciador de dados preenchidas com os dados do arquivo.
+	 * @param gerenciador instância do gerenciador de dados.
+	 * @return instância do gerenciador de dados preenchidas com os dados do arquivo.
 	 * @throws IOException erros de escrita e leitura nos arquivos.
-	 * @throws MonitorException erros espec�ficos da aplica��o.
+	 * @throws MonitorException erros específicos da aplição.
 	 */
 	public GerenciadorConteudo percorreArquivoEntrada(Path caminhoDoArquivo, GerenciadorConteudo gerenciador)
 			throws IOException, MonitorException {

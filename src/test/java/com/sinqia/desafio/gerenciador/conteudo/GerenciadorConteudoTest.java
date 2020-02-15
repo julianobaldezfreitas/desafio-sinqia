@@ -26,16 +26,16 @@ public class GerenciadorConteudoTest {
 	public void setUp() {
 		this.gerenciadorConteudo = new GerenciadorConteudo();
 
-		linhasArquivo.add("001ç1234567891234çPedroç50000");
-		linhasArquivo.add("002ç2345675434544345çJose da SilvaçRural");
-		linhasArquivo.add("003ç21ç[1-5-10,2-1-1.50,3-40-1.55]çVanessa");
-		//linhasArquivo.add("005ç21çVanessa");
-		linhasArquivo.add("003ç22ç[1-34-1000,2-33-1.50,3-40-0.10]çJuliano");
+		linhasArquivo.add("001Ã§1234567891234Ã§PedroÃ§50000");
+		linhasArquivo.add("002Ã§2345675434544345Ã§Jose da SilvaÃ§Rural");
+		linhasArquivo.add("003Ã§21Ã§[1-5-10,2-1-1.50,3-40-1.55]Ã§Vanessa");
+		//linhasArquivo.add("005Ã§21Ã§Vanessa");
+		linhasArquivo.add("003Ã§22Ã§[1-34-1000,2-33-1.50,3-40-0.10]Ã§Juliano");
 	}
 
 	@Test
 	public void testeDadosVendedor() throws MonitorException {
-		String linha = "001ç1234567891234çPedroç50000";
+		String linha = "001Ã§1234567891234Ã§PedroÃ§50000";
 		this.gerenciadorConteudo.geraConteudo(linha);
 		assertEquals(gerenciadorConteudo.getVendedores().size(), 1);
 
@@ -46,7 +46,7 @@ public class GerenciadorConteudoTest {
 	
 	@Test
 	public void testeDadosCliente() throws MonitorException {
-		String linha = "002ç2345675434544345çJose da SilvaçRural";
+		String linha = "002Ã§2345675434544345Ã§Jose da SilvaÃ§Rural";
 		this.gerenciadorConteudo.geraConteudo(linha);
 		assertEquals(gerenciadorConteudo.getClientes().size(), 1);
 
@@ -57,7 +57,7 @@ public class GerenciadorConteudoTest {
 	
 	@Test
 	public void testeDadosVenda() throws MonitorException {
-		String linha = "003ç21ç[1-34-1000,2-33-1.50,3-40-0.10]çVanessa";
+		String linha = "003Ã§21Ã§[1-34-1000,2-33-1.50,3-40-0.10]Ã§Vanessa";
 		this.gerenciadorConteudo.geraConteudo(linha);
 		assertEquals(gerenciadorConteudo.getVendas().size(), 1);
 
@@ -68,7 +68,7 @@ public class GerenciadorConteudoTest {
 	
 	@Test
 	public void testeDadosItemVenda() throws MonitorException {
-		String linha = "003ç21ç[1-34-1000,2-33-1.50,3-40-0.10]çVanessa";
+		String linha = "003Ã§21Ã§[1-34-1000,2-33-1.50,3-40-0.10]Ã§Vanessa";
 		this.gerenciadorConteudo.geraConteudo(linha);
 		
 		assertEquals(gerenciadorConteudo.getVendas().size(), 1);
@@ -103,12 +103,12 @@ public class GerenciadorConteudoTest {
 		Map<String, VendaPorVendedor> vendaVendedor = gerenciadorConteudo.getVendaPorVendedor();
 		
 		//34053.50
-		//003ç22ç[1-34-1000,2-33-1.50,3-40-0.10]çJuliano
+		//003Ã§22Ã§[1-34-1000,2-33-1.50,3-40-0.10]Ã§Juliano
 		assertEquals(vendaVendedor.size(), 2);
 		assertThat(vendaVendedor.get("Juliano").getTotal(), Matchers.comparesEqualTo(new BigDecimal(34053.50)));
 	
 		//113.50
-		//003ç21ç[1-5-10,2-1-1.50,3-40-1.55]çVanessa
+		//003Ã§21Ã§[1-5-10,2-1-1.50,3-40-1.55]Ã§Vanessa
 		System.out.println(vendaVendedor.get("Vanessa").getTotal());
 		assertThat(vendaVendedor.get("Vanessa").getTotal(), Matchers.comparesEqualTo(new BigDecimal(113.50)));
 	}
