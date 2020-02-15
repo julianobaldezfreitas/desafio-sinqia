@@ -24,12 +24,12 @@ public class EntityFactory {
 
 	/**
 	 * Cria objetos Entity concretos (Venda, Cliente e Vendedor).
-	 * De acordo com o c�digo da linha no arquivo
+	 * De acordo com o código da linha no arquivo
 	 * cria a instância das classes que as representam.
 	 * 
 	 * @param linhaDoArquivo linha do arquivo percorrido.
 	 * @return instância das classes concretas de Entity.
-	 * @throws CodigoLinhaException c�digo de linha inválido.
+	 * @throws CodigoLinhaException código de linha inválido.
 	 */
 	public static Entity getEntity(String linhaDoArquivo) throws CodigoLinhaException {
 		if (getCodigoTipoDado(linhaDoArquivo).equals(CODIGO_VENDEDOR)) {

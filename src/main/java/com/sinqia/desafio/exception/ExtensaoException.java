@@ -11,7 +11,7 @@ public class ExtensaoException extends MonitorException{
 	private static final long serialVersionUID = 1L;
 
 	public ExtensaoException() {
-		super("Extens�o de arquivo de entrada n�o suportado.");
+		super("Extensão de arquivo de entrada não suportado.");
 	}
 	
 }

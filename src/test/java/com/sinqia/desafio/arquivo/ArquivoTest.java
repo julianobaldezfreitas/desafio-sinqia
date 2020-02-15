@@ -9,14 +9,13 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 
 import org.junit.Before;
-import org.junit.Ignore;
 import org.junit.Test;
 
 import com.sinqia.desafio.exception.ExtensaoException;
 import com.sinqia.desafio.exception.MonitorException;
 import com.sinqia.desafio.gerenciador.conteudo.GerenciadorConteudo;
 
-@Ignore
+	
 public class ArquivoTest {
 
 	private GerenciadorConteudo gerenciador;

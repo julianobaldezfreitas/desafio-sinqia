@@ -4,18 +4,17 @@ import static org.junit.Assert.assertEquals;
 
 import java.io.IOException;
 import java.net.URISyntaxException;
-import java.nio.file.Path;	
+import java.nio.file.Path;
 
 import org.junit.Before;
 import org.junit.BeforeClass;
-import org.junit.Ignore;
 import org.junit.Test;
 import org.mockito.Mockito;
 
 import com.sinqia.desafio.exception.MonitorException;
 import com.sinqia.desafio.gerenciador.conteudo.GerenciadorConteudo;
 
-@Ignore
+
 public class ProcessaArquivoTest {
 
 	private ProcessaArquivo processaArquivo;

@@ -16,8 +16,8 @@ import com.sinqia.desafio.gerenciador.conteudo.Relatorio;
 
 /**
  * Classe que representa o arquivo a ser analisado
- * dentro do lote. Possui opera��es para percorrer
- * um arquivo e gerar arquivos de sa�da.
+ * dentro do lote. Possui operações para percorrer
+ * um arquivo e gerar arquivos de saída.
  * @author juliano
  */
 public class Arquivo {

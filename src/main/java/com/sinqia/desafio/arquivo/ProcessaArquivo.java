@@ -8,8 +8,8 @@ import com.sinqia.desafio.gerenciador.conteudo.GerenciadorConteudo;
 
 /**
  * Classe responsável pela orquestração do processamento
- * dos dados. Chama as opera��es de arquivo, de gerenciamento
- * de conteúdo e de impress�o do relatório.
+ * dos dados. Chama as operações de arquivo, de gerenciamento
+ * de conteúdo e de impressão do relatório.
  * @author juliano
  */
 public class ProcessaArquivo {
