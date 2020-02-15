@@ -35,7 +35,7 @@ java.nio.file.FileSystemException: <caminho do arquivo>: O arquivo já está sen
 
 ## Bugs conhecidos nos Unit Tests
 
-- Na classe **Arquivo.java** os arquivos são aberto para leitura com padrão de ENCODE UTF-8. Nos testes realizados na aplicação não geram nenhum tipo de erro. Ao implementar os testes unitários automatizados foi percebido que com esta condificação os testes estavam levantando a seguinte exception:
+- **[CORRIGIDO]** Na classe **Arquivo.java** os arquivos são aberto para leitura com padrão de ENCODE UTF-8. Nos testes realizados na aplicação não geram nenhum tipo de erro. Ao implementar os testes unitários automatizados foi percebido que com esta condificação os testes estavam levantando a seguinte exception:
 
 ```
 java.nio.charset.MalformedInputException: Input length = 1
@@ -48,13 +48,6 @@ java.nio.charset.MalformedInputException: Input length = 1
 	at java.io.BufferedReader.readLine(BufferedReader.java:389)
 	at java.nio.file.Files.readAllLines(Files.java:3205)
 	at com.sinqia.desafio.arquivo.Arquivo.percorreArquivoEntrada(Arquivo.java:44)
-```
-
-- Nesta versão os testes unitários **ArquivoTest** e **ProcessoArquivoTest** estão comentadas com **@Ignore** até ter o fix do problema. Para rodar estes testes basta retirar a anotação.
-
-```
-@Ignore
-public class ArquivoTest {
 ```
 
 - Alguns arquivos de dados são utilizados para os testes unitários. Eles ficam no caminho **/src/test/resources** do projeto. Melhorar a forma de apontar para pegar o caminho destes arquivos.
@@ -70,7 +63,7 @@ public class ArquivoTest {
 - evitar percorrer listas em memória muitas vezes;
 
 ## Outras notas:
-- Cobertura de testes unitários está em +-60% mesmo com dois testes ignorados conforme citado.
+- Cobertura de testes unitários está em +-70%
 - JavaDoc criado foi versionado no projeto
 - Foi utilizado o plugIn FindBugs para análise estática de código. Nenhuma issue reportada.
 
